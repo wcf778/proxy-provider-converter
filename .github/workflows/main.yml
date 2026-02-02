@@ -1,21 +1,12 @@
-- name: Auto sync your fork upstream
+- name: Sync Fork with Upstream
   # You may pin to the exact commit or the version.
-  # uses: rovast/sync-upstream-repo@f87d4f3467cc312809e50ebfc8a1977b2b518ad1
-  uses: rovast/sync-upstream-repo@v0.0.1
-  with: https://github.com/ous50/proxy-provider-converter # URL of gitHub public upstream repo
-    upstream_repo: 
-    # Branch to merge from upstream (defaults to downstream branch)
-    upstream_branch: # optional, default is main
-    # Branch to merge into downstream
-    downstream_branch: # optional, default is 
-    # GitHub Bot token
-    token: 
-    # Git fetch arguments
-    fetch_args: # optional, default is 
-    # Git merge arguments
-    merge_args: # optional, default is 
-    # Git push arguments
-    push_args: # optional, default is 
-    # Toggle to spawn `sync-upstream-repo` with time logs
-    spawn_logs: 
+  # uses: AbdulmelikKalkan/sync-fork-upstream@6ec773469487cc30a2631d2cfafc1b0f1f82ca6d
+   uses: AbdulmelikKalkan/sync-fork-upstream@v1.3
+   with:
+    # The account owner of the repository.
+   owner: ous50
+    # The name of the repository.
+   repo: proxy-provider-converter
+    # The name of the branch which should be updated to match upstream.
+   branch: main
           
