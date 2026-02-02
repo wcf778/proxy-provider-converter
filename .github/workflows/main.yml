@@ -1,9 +1,8 @@
-            - name: Auto sync your fork upstream
+- name: Auto sync your fork upstream
   # You may pin to the exact commit or the version.
   # uses: rovast/sync-upstream-repo@f87d4f3467cc312809e50ebfc8a1977b2b518ad1
   uses: rovast/sync-upstream-repo@v0.0.1
-  with:
-    https://github.com/ous50/proxy-provider-converter # URL of gitHub public upstream repo
+  with: https://github.com/ous50/proxy-provider-converter # URL of gitHub public upstream repo
     upstream_repo: 
     # Branch to merge from upstream (defaults to downstream branch)
     upstream_branch: # optional, default is main
